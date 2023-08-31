@@ -1,3 +1,3 @@
-from django.contrib import admin
+from core.admin_classes import admin
 
-# Register your models here.
+__all__ = ['admin']

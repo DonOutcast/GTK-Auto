@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
-# from .jazzmin_config import JAZZMIN_SETTINGS
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -114,7 +114,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru'
 
 TIME_ZONE = 'UTC'
 
@@ -125,11 +125,11 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
-STATIC_ROOT = Path.joinpath(BASE_DIR, "static")
-MEDIA_ROOT = Path.joinpath(BASE_DIR, "media")
-STATICFILES_DIRS = (Path.joinpath(BASE_DIR, 'statics'),)
+STATIC_ROOT = Path.joinpath(BASE_DIR, "static/")
+MEDIA_ROOT = Path.joinpath(BASE_DIR, "media/")
+# STATICFILES_DIRS = (Path.joinpath(BASE_DIR, 'statics'),)
 
-MEDIA_URL = '/media/'
+MEDIA_URL = 'media/'
 
 STATIC_URL = 'static/'
 
@@ -138,4 +138,10 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# JAZZMIN_SETTINGS = JAZZMIN_SETTINGS
+# JAZZMIN_SETTINGS = {
+#     # "site_title": "GTK Auto",
+#     # "site_logo": "static/img/logo.jpg",
+#     # "login_logo": "static/img/logo.jpg",
+#     # "site_logo_classes": "img-circle",
+#     "site_copyright": "GTK Auto",
+# }

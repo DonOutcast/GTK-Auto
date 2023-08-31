@@ -32,15 +32,6 @@ class Auto(BaseModel):
         verbose_name="Торг"
     )
 
-    def show_image(self):
-        if self.image:
-            return format_html(
-                '<img src={} style="width: 40px; height: 40px;"/>', self.image.url
-            )
-        else:
-            return format_html(
-                '<span style="color: red;">Нету фото<span/>'
-            )
 
     class Meta:
         verbose_name = "Автомобиль"

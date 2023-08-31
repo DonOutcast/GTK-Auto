@@ -1,4 +1,4 @@
-# JAZZMIN_SETTINGS = {
+JAZZMIN_SETTINGS = {
 #     # title of the window (Will default to current_admin_site.site_title if absent or None)
 #     "site_title": "Library Admin",
 #
@@ -12,7 +12,7 @@
 #     "site_logo": "books/img/logo.png",
 #
 #     # Logo to use for your site, must be present in static files, used for login form logo (defaults to site_logo)
-#     "login_logo": None,
+    "login_logo": None,
 #
 #     # Logo to use for login form in dark themes (defaults to login_logo)
 #     "login_logo_dark": None,
@@ -137,4 +137,4 @@
 #     "changeform_format_overrides": {"auth.user": "collapsible", "auth.group": "vertical_tabs"},
 #     # Add a language dropdown into the admin
 #     "language_chooser": True,
-# }
+}

@@ -20,11 +20,6 @@ class BaseModel(models.Model):
         auto_now=True
     )
 
-    deleted_at = models.DateTimeField(
-        null=True,
-        blank=True
-    )
-
     class Meta:
         abstract = True
 
